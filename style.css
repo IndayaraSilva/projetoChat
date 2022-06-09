@@ -47,7 +47,7 @@ main {
 }
 
 #fotobebe {
-    border-color: aqua;
+    border-color: #87cefa;;
     border-style: solid;
     border-width: 2px;
     border-radius: 50%;
@@ -110,13 +110,14 @@ main {
 
 #mensagem_azul{
     display: block;
-    background-color: aqua;
-    max-width: 120px;
-    
+    background-color: #87cefa;
+
+
+    padding: 20px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
 }
-
-
-
 
 
 
@@ -125,10 +126,10 @@ main {
     border: none;
     cursor: pointer;
     color: white;
-    background-color: aqua;
+    background-color: #87cefa;;
     transition: all 0.1s;
     transform: scale(1.1);
-    border: blue solid 3px 50;
+    /* border: blue solid 3px 50; */
 
 }
 #verde:hover {
@@ -138,5 +139,5 @@ main {
     background-color: green;
     transition: all 0.1s;
     transform: scale(1.1);
-    border: blue solid 3px 50%;
+    /* border: blue solid 3px 50%; */
 }
