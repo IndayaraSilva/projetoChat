@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+
+    background-image: url(assets/fundo_mensagem.png);
+    background-repeat: repeat;
+}
+
+/* SESSÃO 1 */
+
+#user1 {
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: start;
+    flex-wrap: wrap;
+
+    padding: 2vw;
+}
+
+.geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 1vw;
+}
+
+.itens {
+    display: flex;
+    align-items: center;
+}
+
+#fotobebe {
+    border-color: aqua;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50%;
+}
+
+
+/* CHAT */
+#chat {
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+}
+
+
+/* SESSÃO 2 */
+#user2 {
+    width: 33.33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+
+    padding: 2vw;
+}
+
+#yoda {
+    border-color: green;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50%;
+}
+
+.textUser {
+    margin-right: 5px;
+    padding: 12px 16px 14px;
+    border: 1px solid white;
+    border-radius: 12px;
+    width: 200px;
+    height: 60px;
+}
+
+.botao {
+    display: flex;
+    align-self: center;
+
+    background-color: white;
+    color: gray;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+    border: none;
+    border-radius: 12px;
+    height: 50px;
+}
+
+#chat{
+    display:flex;
+    flex-direction: column; 
+}
+
+#mensagem_azul{
+    display: block;
+    background-color: aqua;
+    max-width: 120px;
+    
+}
+
+
+
+
+
+
+
+#azul:hover {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: aqua;
+    transition: all 0.1s;
+    transform: scale(1.1);
+    border: blue solid 3px 50;
+
+}
+#verde:hover {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: green;
+    transition: all 0.1s;
+    transform: scale(1.1);
+    border: blue solid 3px 50%;
+}

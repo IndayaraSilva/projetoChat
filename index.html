@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section id="user1">
+            <div class="geral">
+                <img src="assets/user1.jpg" alt="imagem bebê user 1" id="fotobebe" width="120px">
+                <div class="itens">
+                    <input type="text" class="textUser" placeholder="Digite sua mensagem..." id="texto1" >
+                    <input type="button" value="Enviar" class="botao" id="azul" onclick="botao1()">
+                </div>
+            </div>
+        </section>
+
+        <section id="chat">
+            <div id="mensagem_azul">
+                <p>E ai, bebe verde!</p>
+            </div>
+            <div id="mensagem_verde">
+                <p>Save Men!</p>
+            </div>
+
+        </section>
+
+
+        <section id="user2">
+            <div class="geral">
+                <img src="assets/user2.png" alt="imagem baby yoda user 2" width="120px" id="yoda">
+                <div class="itens">
+                    <input type="text" placeholder="Digite sua mensagem..." class="textUser" id="texto2">
+                    <input type="button" value="Enviar" class="botao" id="verde" onclick="botao2()">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
