@@ -1,21 +1,56 @@
-function botao1(){
+var mensagens = [];
+var ultimo = [mensagens[mensagens.length-1]];
 
-
-    var addTexto1 = document.getElementById("texto1")
-    var Paragrafo1 = document.createElement("p")
+document.addEventListener("keypress", function (e) {
+    if (e.key === 'Enter') {
+        inserirItemTemplate();
     
-    Paragrafo1.innerHTML = addTexto1.value
-    document.body.append(Paragrafo1);
+    }})
+
+function mensagem1() {
+  var conteudo = document.getElementById("texto1").value
+  var mensagem = {
+    "nome": "User1",
+    "conteudo": conteudo
+  }
+  mensagens.push(mensagem)
+  
+  // console.log(mensagens)
+  // mostrarMensagem()
 }
 
-function botao2(){
-
-  var addTexto2 = document.getElementById("texto2")
-  var Paragrafo2 = document.createElement("p")
-  Paragrafo2.innerHTML = addTexto2.value
-
-
-  document.body.append(Paragrafo2);
-
-//"nessa parte podemos podemos substituir body por section(não sei se da certo)"
+function mensagem2() {
+  var conteudo = document.getElementById("texto2").value
+  var mensagem = {
+    "nome": "User2",
+    "conteudo": conteudo
+  }
+  mensagens.push(mensagem)
+  
+  // console.log(mensagens)
+  // mostrarMensagem()
 }
+var primeiro = mensagens[0]
+
+// function mostrarMensagem() {
+//   var chat = document.getElementById("chat")  
+//   var ultimo = mensagens[mensagens.length - 1]
+//   console.log(ultimo)
+
+
+// }
+
+
+  
+  // if ( == "User1") {
+  //   chat.innerHTML += `<div class="textosChat" id="mensagem_azul">
+  //    ${mensagens.mensagem.conteudo}
+  //   </div>`
+
+  // } else if( == "User2") {
+  //   chat.innerHTML += `<div class="textosChat" id="mensagem_azul">
+  //   ${mensagens.mensagem.conteudo}
+  //   </div>`
+  // }
+
+

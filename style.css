@@ -11,16 +11,18 @@ main {
     flex-direction: row;
     justify-content: space-between;
     height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
 
     background-image: url(assets/fundo_mensagem.png);
     background-repeat: repeat;
+    background-size: contain;
 }
 
 /* SESSÃO 1 */
 
 #user1 {
     height: 100%;
-    width: 33.33%;
+    width: 33%;
     display: flex;
 
     align-items: flex-start;
@@ -56,15 +58,54 @@ main {
 
 /* CHAT */
 #chat {
-    width: 33.33%;
+    overflow-y: auto;
+
+    width: 33%;
     height: 100%;
     display: flex;
+    flex-direction: column; 
+    
+    padding: 1vh;
+}
+
+#mensagem_azul{
+    /* display: inline-block; */
+    background-color: #87cefa;
+    
+    display: flex;
+    align-self: flex-start;
+
+    padding: 20px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+
+    max-width: 80%;
+}
+
+#mensagem_verde{
+    background-color: lightgreen;
+
+    display: flex;
+    align-self: flex-end;
+
+    padding: 20px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+
+    max-width: 80%;
+}
+
+.textosChat{
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 
 /* SESSÃO 2 */
 #user2 {
-    width: 33.33%;
+    width: 33%;
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -102,25 +143,6 @@ main {
     border-radius: 12px;
     height: 50px;
 }
-
-#chat{
-    display:flex;
-    flex-direction: column; 
-}
-
-#mensagem_azul{
-    display: block;
-    background-color: #87cefa;
-
-
-    padding: 20px 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-}
-
-
-
 
 #azul:hover {
     border: none;
