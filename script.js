@@ -1,11 +1,11 @@
 var mensagens = [];
-var ultimo = [mensagens[mensagens.length-1]];
 
-document.addEventListener("keypress", function (e) {
-    if (e.key === 'Enter') {
-        inserirItemTemplate();
+
+// document.addEventListener("keypress", function (e) {
+//     if (e.key === 'Enter') {
+//         inserirItemTemplate();
     
-    }})
+//     }})
 
 function mensagem1() {
   var conteudo = document.getElementById("texto1").value
@@ -14,6 +14,8 @@ function mensagem1() {
     "conteudo": conteudo
   }
   mensagens.push(mensagem)
+  var ultimo = mensagens[mensagens.length-1]
+  console.log(ultimo)
   
   // console.log(mensagens)
   // mostrarMensagem()
@@ -26,11 +28,11 @@ function mensagem2() {
     "conteudo": conteudo
   }
   mensagens.push(mensagem)
-  
+  var ultimo = mensagens[mensagens.length-1]
+  console.log(ultimo)
   // console.log(mensagens)
   // mostrarMensagem()
 }
-var primeiro = mensagens[0]
 
 // function mostrarMensagem() {
 //   var chat = document.getElementById("chat")  
